@@ -16,9 +16,7 @@ pipeline {
                 script {
                     if (isUnix()) {
                         sh 'echo "Running on Unix"'
-                        sh 'javac HelloWorld.java'
-                        sh 'java HelloWorld'
-                        sh 'python3 hello.py'
+                        sh 'java HelloWorld.java'
                     } else {
                         bat 'echo "Running on Windows"'
                         bat 'javac HelloWorld.java'
